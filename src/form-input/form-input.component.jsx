@@ -1,14 +1,17 @@
-import './form-input.styles.scs'
+import './form-input.styles.scss'
 
-const FormInput = ({handleChange,...otherProps})=> {
+const FormInput = ({handleChange,...otherProps}) => {
     return(
         <div className='group'>
             <input 
-            {...otherProps}
-            onChange={handleChange}
-            className='form-input'
+                {...otherProps}
+                onChange={handleChange}
+                className='form-input'
             />
         </div>
     )
 }
+
+
+
 export default FormInput
